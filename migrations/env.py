@@ -12,6 +12,9 @@ from models.models import metadata
 # access to the values within the .ini file in use.
 config = context.config
 
+"""
+Указаны данные от БД
+"""
 section = config.config_ini_section
 config.set_section_option(section, "DB_HOST", DB_HOST)
 config.set_section_option(section, "DB_PORT", DB_PORT)
