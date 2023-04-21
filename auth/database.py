@@ -41,7 +41,7 @@ async_session_maker = async_sessionmaker(engine, expire_on_commit=False)
 
 
 """
-makes the link between your database configuration and the users logic. 
+Создает связь между БД и аутентификацией юзеров.
 """
 async def get_async_session() -> AsyncGenerator[AsyncSession, None]:
     async with async_session_maker() as session:
