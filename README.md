@@ -10,4 +10,25 @@
 <br>Example of user registration:</br>
 ![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/register_users.png)
 
+<br>Example of the result of user registration:</br>
+![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/register_users_result.png)
+
+<br>Example of adding new item:</br>
+![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/add_item.png)
+
+<br>Result of adding new item:</br>
+![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/add_item_result.png)
+
+<br>Example of getting the item:</br>
+![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/get_item.png)
+
+<br>Result of getting the item:</br>
+![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/get_item_result.png)
+
+<br>Example of deleting the item:</br>
+![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/delete_item.png)
+
+<br>Result of deleting the item:</br>
+![Image alt](https://github.com/vtecovsky/Auto-Market-Spot/raw/main/images_for_readme/delete_item_result.png)
+
 
