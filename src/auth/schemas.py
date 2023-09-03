@@ -2,7 +2,7 @@ from typing import Optional
 
 from fastapi_users import schemas
 
-"""В следующих 2 классах начинка взята из базовых классов корневой библиотеки FastAPI"""
+
 class UserRead(schemas.BaseUser[int]):
     id: int
     email: str

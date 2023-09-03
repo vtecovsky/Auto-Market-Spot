@@ -1,12 +1,12 @@
-from sqlalchemy import Table, Column, Integer, String, Float, MetaData
+from sqlalchemy import Column, Float, Integer, String
 
-metadata = MetaData()
+from src.database import Base
 
-item = Table(
-    "item",
-    metadata,
-    Column("id", Integer, primary_key=True),
-    Column("price", Float),
-    Column("figi", String),
-    Column("type", String),
-)
+
+class Item(Base):
+    __tablename__ = "item"
+
+    id = Column(Integer, primary_key=True, index=True)
+    price = Column(Float, index=True)
+    figi = Column(String, index=True)
+    type = Column(String, index=True)

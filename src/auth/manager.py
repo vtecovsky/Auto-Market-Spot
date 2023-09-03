@@ -1,17 +1,16 @@
 from typing import Optional
 
 from fastapi import Depends, Request
-from fastapi_users import BaseUserManager, IntegerIDMixin, exceptions, models, schemas
+from fastapi_users import (BaseUserManager, IntegerIDMixin, exceptions, models,
+                           schemas)
 
-from auth.models import User
-from auth.utils import get_user_db
-
-from config import SECRET_AUTH
+from src.auth.models import User
+from src.auth.utils import get_user_db
 
 SECRET = "SECRET"
 
 """
-Основной класс библиотеки fastapi_users     
+Основной класс библиотеки fastapi_users
 """
 
 
@@ -20,10 +19,10 @@ class UserManager(IntegerIDMixin, BaseUserManager[User, int]):
     verification_token_secret = SECRET
 
     async def create(
-            self,
-            user_create: schemas.UC,
-            safe: bool = False,
-            request: Optional[Request] = None,
+        self,
+        user_create: schemas.UC,
+        safe: bool = False,
+        request: Optional[Request] = None,
     ) -> models.UP:
         """
         Create a user in database.
