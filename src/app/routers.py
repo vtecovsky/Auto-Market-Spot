@@ -1,4 +1,4 @@
-from src.items import router as router_items
+from src.app.items import router as router_items
 
 routers = [router_items]
 

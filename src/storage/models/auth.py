@@ -1,10 +1,9 @@
 from datetime import datetime
 
 from fastapi_users_db_sqlalchemy import SQLAlchemyBaseUserTable
-from sqlalchemy import (JSON, TIMESTAMP, Boolean, Column, ForeignKey, Integer,
-                        String)
+from sqlalchemy import TIMESTAMP, Boolean, Column, ForeignKey, Integer, String
 
-from src.database import Base
+from src.storage.database import Base
 
 
 class Role(Base):

@@ -2,9 +2,9 @@ from fastapi_users import FastAPIUsers
 from fastapi_users.authentication import (AuthenticationBackend,
                                           CookieTransport, JWTStrategy)
 
-from src.auth.manager import get_user_manager
-from src.auth.models import User
+from src.app.auth.manager import get_user_manager
 from src.config import SECRET_AUTH
+from src.storage.models.auth import User
 
 cookie_transport = CookieTransport(cookie_name="shop", cookie_max_age=3600)
 

@@ -1,9 +1,8 @@
 from fastapi import FastAPI
 
-from src.database import engine, Base
-from src.auth.base_config import auth_backend, fastapi_users
-from src.auth.schemas import UserCreate, UserRead
-from src.routers import routers
+from src.app.auth.base_config import auth_backend, fastapi_users
+from src.app.routers import routers
+from src.schemas.auth import UserCreate, UserRead
 
 app = FastAPI(title="Auto Market Spot")
 
@@ -18,7 +17,6 @@ app.include_router(
     prefix="/auth",
     tags=["Auth"],
 )
-
 
 
 # To clean the database
